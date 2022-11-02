@@ -4,6 +4,10 @@
 
 In the project directory, you can run:
 
+### `npm run deploy`
+
+Runs new build and deploys new version
+
 ### `npm start`
 
 Runs the app in the development mode.\

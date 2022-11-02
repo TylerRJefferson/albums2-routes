@@ -17,7 +17,7 @@ export default function NewAlbumForm() {
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
-    fetch('https://albums-api-tj.web.app/albums', {
+    fetch(process.env.REACT_APP_ENDPOINT+'/albums', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData)

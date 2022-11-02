@@ -4,17 +4,20 @@ import AlbumCard from '../components/AlbumCard'
 export default function AlbumList() {
   const [albums, setAlbums] = useState()
   useEffect(() => {
-    fetch('https://albums-api-tj.web.app/albums')
+    fetch(process.env.REACT_APP_ENDPOINT+'/albums')
       .then(response => response.json())
       .then(setAlbums)
       .catch(alert)
   }, [])
-  return(
+
+
+  return (
     <main className="album-list">
       {!albums
         ? <h2>Loading...</h2>
         : albums.map(thisAlbum => (
           <AlbumCard
+            setAlbums={setAlbums}
             key={thisAlbum.albumId}
             thisAlbum={thisAlbum} />
         ))
