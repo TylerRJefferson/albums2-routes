@@ -1,7 +1,9 @@
+import Header from "../components/Header"
+
 export default function AddAlbum() {
   return (
     <>
-      <h1>Add Album Title goes here...</h1>
+      <Header title={"Add New Album"} />
       <p>New Album Form goes here</p>
     </>
   )
