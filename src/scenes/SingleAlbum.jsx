@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import Header from "../components/Header"
 import AlbumCard from "../components/AlbumCard"
 
@@ -18,6 +18,7 @@ export default function SingleAlbum() {
   return (
     <>
       <Header title={thisAlbum ? thisAlbum.album : 'Loading...'} />
+      <Link to="/"> &lt; Back</Link>
       {thisAlbum
         ? <AlbumCard thisAlbum={thisAlbum} />
         : null
