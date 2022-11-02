@@ -1,0 +1,17 @@
+.album-list {
+  border: 2px solid var(--deep-blue);
+  margin: calc(1rem + 1vw);
+  background-color: var(--sky-blue);
+  font-size: var(--my-font);
+}
+
+.album-card {
+  border: 2px solid grey;
+  margin: 1rem;
+  background-color: #eee;
+}
+
+.album-title {
+  text-transform: uppercase;
+  color: var(--light-brown);
+}
